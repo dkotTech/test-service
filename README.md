@@ -5,8 +5,8 @@
 ### From sources
 
 ```bash
-git clone git@github.com:dkotTech/test-app.git
-cd test-app
+git clone git@github.com:dkotTech/test-service.git
+cd test-service
 go run ./cmd/service/main.go 
 ```
 
