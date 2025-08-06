@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package grpc;
+
+option go_package = "balances/grpc";
+
+service BalancesService {
+  rpc CurrentOne(GetCurrentOneRequest) returns (GetCurrentOneResponse);
+}
+
+message GetCurrentOneRequest {
+  string account_id = 1;
+}
+
+message GetCurrentOneResponse {
+  string account_id = 1;
+  double balance    = 2;
+}
